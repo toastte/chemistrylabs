@@ -1,0 +1,184 @@
+\documentclass{article}
+
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{titling}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[letterpaper, portrait, margin=1.5in]{geometry}
+\usepackage{float}
+\usepackage{units}
+\usepackage{pgfplots, pgfplotstable}
+
+\begin{document}
+
+\begin{titlepage}
+
+\title{\huge Chemistry I Density Lab \vskip 0.5em}
+
+\pretitle{\begin{center}\par}
+\posttitle{\large \par 6th Period \vskip 0.5em\end{center}}
+
+\author{Fletcher Collins}
+\maketitle
+
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\section{Purpose}
+
+	This lab was done to introduce the concept of density, which can be defined as a ratio of mass to volume.
+
+\section{Methods/Materials}
+
+	No changes were made to the methods and materials when performing the experiment. Please see the lab printout for information on the procedure and materials used in this lab.
+
+\section{Results}
+
+	Data on the density was collected on three different metals and five different quantities of nails. The results have been separated into two main parts. Part I for the measurements taken on the three metal cubes, and part II for the measurements taken on the five different quantities of nails.
+
+	\subsection{Part I - Density of Three Metal Blocks}
+	
+	During our lab, we measured the dimensions to find  of three different blocks each made up of a different metal: brass, copper, and aluminium. 
+
+	\subsubsection{Data}
+\begin{table}[H]
+\centering
+\caption{The measurements taken on the three metal blocks}
+\label{my-label}
+\begin{tabular}{|
+>{\columncolor[HTML]{EFEFEF}}l c
+>{\columncolor[HTML]{EFEFEF}}c c
+>{\columncolor[HTML]{EFEFEF}}c c
+>{\columncolor[HTML]{EFEFEF}}c |}
+\hline
+\multicolumn{7}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{Density of Block}}                                                                                                                                                                                                                                                                                             \\
+Trial     & \begin{tabular}[c]{@{}c@{}}Mass\\ (g)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Length\\ (cm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Width\\ (cm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Height\\ (cm)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Volume\\ (cm$^3$)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Density\\ (g\,cm$^{-3}$)\end{tabular} \\
+Brass     & 137.46                                             & 2.50                                                  & 2.49                                                 & 2.49                                                  & 15.5                                                      & 8.87                                                            \\
+Copper    & 145.82                                             & 2.51                                                  & 2.52                                                 & 2.53                                                  & 16.0                                                      & 9.11                                                            \\
+Aluminium & 45.90                                              & 2.53                                                  & 2.52                                                 & 2.51                                                  & 16.0                                                      & 2.84                                                            \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Copper and aluminum density averages}
+\label{my-label}
+\begin{tabular}{|
+>{\columncolor[HTML]{EFEFEF}}l c
+>{\columncolor[HTML]{EFEFEF}}c |}
+\hline
+\multicolumn{3}{|c|}{\cellcolor[HTML]{EFEFEF}Data From Class} \\
+Student           & Density of Copper   & Density of Alumium  \\
+Holly             & 9.23                & 2.97                \\
+James             & 8.47                & 2.87                \\
+Average Density   & 8.94                & 2.89                \\ \hline
+\end{tabular}
+\end{table}
+
+\newpage
+	\subsubsection{Calculations}
+		\underline{Volume} - The formula for volume of a rectangular prism is defined as $$V=l*w*h$$ where
+			$$V=volume, l=length, w=width, h=height$$
+		\\
+		As an example, the volume of the brass block is equal to $\unit[15.3]{cm^3}$. This was found by using the formula with the measurements found during the lab.
+			$$l=\unit[2.50]{cm},w=\unit[2.49]{cm},h=\unit[2.49]{cm}$$
+			$$\unit[2.50]{cm}*\unit[2.49]{cm}*\unit[4.49]{cm}=\unit[15.3]{cm^3}$$
+		\\
+		\underline{Density} - The formula for density is defined as
+			$$\rho=\frac{m}{V}$$
+		where 
+			$$\rho=density,m=mass,V=volume$$
+		\\
+		As an example, the density of the brass block is equal to 8.87 g cm$^{-3}$. This was found by using the formula for density.
+			$$m=\unit[137.46]{g},V=\unit[15.5]{cm^3}$$
+			$$\frac{\unit[137.46]{g}}{\unit[15.3]{cm^3}}=\unit[8.87]{g\,cm^{-3}}$$
+
+\newpage
+
+	\subsection{Part II - Density of an irregular object}
+
+	The volume and mass of five different quantites of nails were found, and these two measurements were used to find the density of each quantity. The quantities measured include 10, 20, 30, 40, and 50 nails.
+
+	\subsubsection{Data}
+
+\begin{table}[H]
+\centering
+\caption{The measurements takeen on the five quantities of nails}
+\label{my-label}
+\begin{tabular}{|
+>{\columncolor[HTML]{EFEFEF}}l c
+>{\columncolor[HTML]{EFEFEF}}c c
+>{\columncolor[HTML]{EFEFEF}}c c|}
+\hline
+\multicolumn{6}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{Density of Nails}}                                                                                                                                                                                                                                         \\
+Nails & \begin{tabular}[c]{@{}c@{}}Mass\\ (g)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Initial Volume\\ (mL)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Final Volume\\ (mL)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Volume\\ (mL)\end{tabular} & \begin{tabular}[c]{@{}c@{}}Density\\ (g mL$^{-3}$)\end{tabular} \\
+10    & 17.38                                              & 64.8                                                          & 67.1                                                        & 2.3                                                   & 7.6                                                          \\
+20    & 34.38                                              & 41.2                                                          & 45.9                                                        & 4.7                                                   & 7.3                                                          \\
+30    & 51.52                                              & 47.8                                                          & 54.9                                                        & 7.1                                                   & 7.2                                                          \\
+40    & 68.45                                              & 58.9                                                          & 67.8                                                        & 8.9                                                   & 7.7                                                          \\
+50    & 85.38                                              & 64.8                                                          & 75.6                                                        & 10.8                                                  & 7.91                                                         \\ \hline
+\end{tabular}
+\end{table}
+
+\pgfplotstableread{
+X Y
+2.3	17.38
+4.7	34.38
+7.1	51.52
+8.9	68.45
+10.8	85.38 
+}\datatable
+
+\pgfplotstablecreatecol[linear regression={ymode=linear}]{regression}{\datatable}
+\xdef\slope{\pgfplotstableregressiona} % save the slope parameter
+\xdef\intercept{\pgfplotstableregressionb} % save the intercept parameter
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[ymin=0,ymax=100,xmin=0,xmax=10.8,legend pos=outer north east,title=Mass vs. Volume,xlabel=Volume in mL, ylabel= Mass in Grams]
+\addplot+[only marks, mark = *, mark size=2pt] table {\datatable};
+%\addplot+[] table[y={create col/linear regression={y=Y}}] {\datatable};
+\addplot [no markers, domain=0:10.8] {\intercept+\slope*x}; 
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+
+\newpage
+
+	\subsubsection{Calculations}
+		\underline{Density} - Refer to the calculations in part one to find how density was calculated in this report.
+\\	\\	\underline{Volume} - As the nails measured were of an irregular shape, we were unable to use the formula for finding the volume of a rectangular prism. Instead, water displacement was used. The formula for finding the volume of an irregular object is
+			$$V_F-V_I=V$$
+		where
+			$$V=volume, V_F=final\,volume, V_I=initial\,volume$$
+\\
+		As an example, to find the volume of ten nails, you would of course substitute the values into the formula and solve.
+			$$V_F=\unit[67.1]{mL}, V_I=\unit[64.8]{mL}$$
+			$$\unit[67.1]{mL}-\unit[64.8]{mL}=\unit[2.3]{mL}$$
+\\
+\section{Conclusion}
+
+During part I of this lab, we found the densities of copper, aluminum, and brass. Please refer to Table 1 for the values recorded. Our percent error for the density of aluminum ended up being 5.2\%, while the percent error for the aluminum density that was averaged with 2 other students, which can be found in Table 2, was 7.0\%. The data collected by our group was 1.8\% more accurate than that of our peers. The percent error for our copper density was 10\%, which is a very conspicuous value. This amount of error could possibly be attributed to the instrument used to measure the length, width, and height of the blocks. A one foot wooden ruler was used, and past use could possibly have warped the material overtime. When averages with two other values from our peers, the percent error changed to 2.2\%, which is a better value than what we got.
+\\\\
+Part II involved finding the densities of various quanities of metal screws, which was 7.99 g mL$^{-1}$ on average, found by measuring the slope of the line of best fit. All points on the graph are very close to the line of best fit, which leads me to believe that are date was very close to being correct. For each amount of nails measered, the density varied between 7.2  g mL$^{-1}$ and 7.91  g mL$^{-1}$, which is a range of 0.7 g mL$^{-1}$. Whether this range of error originated from impurities in the screws or from errors in our measurement is unclear.
+
+\newpage
+
+\section{Lab Questions}
+
+\begin{enumerate}
+\item A pure substance always has the same densities because there are no impurities within it that may have an effect.
+\item Grams is the unit of mass used in this lab
+\item Cm$^3$ or mL are the volume units used in this lab. 
+\item Water displacement works by first filling an instrument that measures volume with a liquid and then taking the initial volume of that liquid. The object being measured is then placed inside the measuring instrument and the total volume of the two is measured. You then take the difference of the total volume and the initial volume to find the volume of the object.
+\item A meniscus is a curve that forms on the top of a liquid.
+\item Density can not be used as a reliable way to identify substances in lab. The number of possible substances combined with possible error in measurements doesn't guarantee a correct identification.
+\item The class data was more accurate.
+\item Forgetting to tap the bubbles out of the graduated cylinder when measuring the volume of the nails could have cause experimental error.
+\end{enumerate}
+
+\end{document}
